@@ -4,6 +4,7 @@ package wst.lab1;
 import wst.lab1.ws.Menagerie;
 import wst.lab1.ws.MenagerieService;
 import wst.lab1.ws.MenagerieServiceService;
+import wst.lab1.ws.ServiceException;
 
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
@@ -38,8 +39,13 @@ public class ConsoleClient {
                     break;
                 case 1:
                     System.out.println("All animals:");
-                    menageriePort.findAll().stream().map(ConsoleClient::menagerieToString).forEach(System.out::println);
-                    currentState = 0;
+                    try {
+                        menageriePort.findAll().stream().map(ConsoleClient::menagerieToString).forEach(System.out::println);
+                    } catch (ServiceException e) {
+                        System.out.println(e.getFaultInfo().getMessage());
+                    } finally {
+                        currentState = 0;
+                    }
                     break;
                 case 2:
                     System.out.println("\nFill in the value of filter, if you'd like to");
@@ -56,8 +62,13 @@ public class ConsoleClient {
                     System.out.println("arrival(yyyy-mm-dd):");
                     XMLGregorianCalendar arrival = readDate(reader);
                     System.out.println("Found:");
-                    menageriePort.filter(id, animal, name, breed, health, arrival).stream().map(ConsoleClient::menagerieToString).forEach(System.out::println);
-                    currentState = 0;
+                    try {
+                        menageriePort.filter(id, animal, name, breed, health, arrival).stream().map(ConsoleClient::menagerieToString).forEach(System.out::println);
+                    } catch (ServiceException e) {
+                        System.out.println(e.getFaultInfo().getMessage());
+                    } finally {
+                        currentState = 0;
+                    }
                     break;
                 case 3:
                     System.out.println("\nFill in all fields");
@@ -86,9 +97,15 @@ public class ConsoleClient {
                         System.out.println("arrival(yyyy-mm-dd):");
                         createArrival = readDate(reader);
                     } while (createArrival == null);
-                    Long createdId = menageriePort.create(createAnimal, createName, createBreed, createHealth, createArrival);
-                    System.out.println("new ID: " + createdId);
-                    currentState = 0;
+                    Long createdId;
+                    try {
+                        createdId = menageriePort.create(createAnimal, createName, createBreed, createHealth, createArrival);
+                        System.out.println("new ID: " + createdId);
+                    } catch (ServiceException e) {
+                        System.out.println(e.getFaultInfo().getMessage());
+                    } finally {
+                        currentState = 0;
+                    }
                     break;
                 case 4:
                     Long updateId;
@@ -111,9 +128,15 @@ public class ConsoleClient {
                     String updateHealth = readString(reader);
                     System.out.println("arrival(yyyy-mm-dd):");
                     XMLGregorianCalendar updateArrival = readDate(reader);
-                    int updatedData = menageriePort.update(updateId, updateAnimal, updateName, updateBreed, updateHealth, updateArrival);
-                    System.out.println("Value was changed");
-                    currentState = 0;
+                    int updatedData = 0;
+                    try {
+                        updatedData = menageriePort.update(updateId, updateAnimal, updateName, updateBreed, updateHealth, updateArrival);
+                        System.out.println("Value was changed");
+                    } catch (ServiceException e) {
+                        System.out.println(e.getFaultInfo().getMessage());
+                    } finally {
+                        currentState = 0;
+                    }
                     break;
                 case 5:
                     Long deleteId;
@@ -125,9 +148,15 @@ public class ConsoleClient {
                         currentState = 0;
                         break;
                     }
-                    int deletedData = menageriePort.delete(deleteId);
-                    System.out.println("Value was deleteds");
-                    currentState = 0;
+                    int deletedData = 0;
+                    try {
+                        deletedData = menageriePort.delete(deleteId);
+                        System.out.println("Value was deleteds");
+                    } catch (ServiceException e) {
+                        System.out.println(e.getFaultInfo().getMessage());
+                    } finally {
+                        currentState = 0;
+                    }
                     break;
                 case 6:
                     return;

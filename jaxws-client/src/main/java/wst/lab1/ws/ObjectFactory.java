@@ -8,17 +8,18 @@ import javax.xml.namespace.QName;
 
 
 /**
- * This object contains factory methods for each
- * Java content interface and Java element interface
- * generated in the wst.lab1.ws package.
- * <p>An ObjectFactory allows you to programatically
- * construct new instances of the Java representation
- * for XML content. The Java representation of XML
- * content can consist of schema derived interfaces
- * and classes representing the binding of schema
- * type definitions, element declarations and model
- * groups.  Factory methods for each of these are
+ * This object contains factory methods for each 
+ * Java content interface and Java element interface 
+ * generated in the wst.lab1.ws package. 
+ * <p>An ObjectFactory allows you to programatically 
+ * construct new instances of the Java representation 
+ * for XML content. The Java representation of XML 
+ * content can consist of schema derived interfaces 
+ * and classes representing the binding of schema 
+ * type definitions, element declarations and model 
+ * groups.  Factory methods for each of these are 
  * provided in this class.
+ * 
  */
 @XmlRegistry
 public class ObjectFactory {
@@ -32,23 +33,34 @@ public class ObjectFactory {
     private final static QName _Delete_QNAME = new QName("http://ws.lab1.wst/", "delete");
     private final static QName _FindAll_QNAME = new QName("http://ws.lab1.wst/", "findAll");
     private final static QName _Filter_QNAME = new QName("http://ws.lab1.wst/", "filter");
+    private final static QName _ServiceException_QNAME = new QName("http://ws.lab1.wst/", "ServiceException");
     private final static QName _DeleteResponse_QNAME = new QName("http://ws.lab1.wst/", "deleteResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: wst.lab1.ws
+     * 
      */
     public ObjectFactory() {
     }
 
     /**
      * Create an instance of {@link Filter }
+     * 
      */
     public Filter createFilter() {
         return new Filter();
     }
 
     /**
+     * Create an instance of {@link ServiceFault }
+     */
+    public ServiceFault createServiceFault() {
+        return new ServiceFault();
+    }
+
+    /**
      * Create an instance of {@link DeleteResponse }
+     *
      */
     public DeleteResponse createDeleteResponse() {
         return new DeleteResponse();
@@ -56,6 +68,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Create }
+     *
      */
     public Create createCreate() {
         return new Create();
@@ -63,6 +76,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CreateResponse }
+     *
      */
     public CreateResponse createCreateResponse() {
         return new CreateResponse();
@@ -70,6 +84,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Update }
+     *
      */
     public Update createUpdate() {
         return new Update();
@@ -77,6 +92,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link FilterResponse }
+     *
      */
     public FilterResponse createFilterResponse() {
         return new FilterResponse();
@@ -84,6 +100,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link FindAllResponse }
+     *
      */
     public FindAllResponse createFindAllResponse() {
         return new FindAllResponse();
@@ -91,6 +108,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Delete }
+     *
      */
     public Delete createDelete() {
         return new Delete();
@@ -98,6 +116,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link FindAll }
+     *
      */
     public FindAll createFindAll() {
         return new FindAll();
@@ -105,6 +124,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link UpdateResponse }
+     *
      */
     public UpdateResponse createUpdateResponse() {
         return new UpdateResponse();
@@ -112,6 +132,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Menagerie }
+     *
      */
     public Menagerie createMenagerie() {
         return new Menagerie();
@@ -119,6 +140,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FilterResponse }{@code >}}
+     *
      */
     @XmlElementDecl(namespace = "http://ws.lab1.wst/", name = "filterResponse")
     public JAXBElement<FilterResponse> createFilterResponse(FilterResponse value) {
@@ -127,6 +149,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FindAllResponse }{@code >}}
+     *
      */
     @XmlElementDecl(namespace = "http://ws.lab1.wst/", name = "findAllResponse")
     public JAXBElement<FindAllResponse> createFindAllResponse(FindAllResponse value) {
@@ -135,6 +158,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Create }{@code >}}
+     *
      */
     @XmlElementDecl(namespace = "http://ws.lab1.wst/", name = "create")
     public JAXBElement<Create> createCreate(Create value) {
@@ -143,6 +167,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CreateResponse }{@code >}}
+     *
      */
     @XmlElementDecl(namespace = "http://ws.lab1.wst/", name = "createResponse")
     public JAXBElement<CreateResponse> createCreateResponse(CreateResponse value) {
@@ -151,6 +176,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Update }{@code >}}
+     *
      */
     @XmlElementDecl(namespace = "http://ws.lab1.wst/", name = "update")
     public JAXBElement<Update> createUpdate(Update value) {
@@ -159,6 +185,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UpdateResponse }{@code >}}
+     *
      */
     @XmlElementDecl(namespace = "http://ws.lab1.wst/", name = "updateResponse")
     public JAXBElement<UpdateResponse> createUpdateResponse(UpdateResponse value) {
@@ -167,6 +194,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Delete }{@code >}}
+     *
      */
     @XmlElementDecl(namespace = "http://ws.lab1.wst/", name = "delete")
     public JAXBElement<Delete> createDelete(Delete value) {
@@ -175,6 +203,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FindAll }{@code >}}
+     *
      */
     @XmlElementDecl(namespace = "http://ws.lab1.wst/", name = "findAll")
     public JAXBElement<FindAll> createFindAll(FindAll value) {
@@ -183,6 +212,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Filter }{@code >}}
+     *
      */
     @XmlElementDecl(namespace = "http://ws.lab1.wst/", name = "filter")
     public JAXBElement<Filter> createFilter(Filter value) {
@@ -190,7 +220,17 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ServiceFault }{@code >}}
+     *
+     */
+    @XmlElementDecl(namespace = "http://ws.lab1.wst/", name = "ServiceException")
+    public JAXBElement<ServiceFault> createServiceException(ServiceFault value) {
+        return new JAXBElement<ServiceFault>(_ServiceException_QNAME, ServiceFault.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteResponse }{@code >}}
+     *
      */
     @XmlElementDecl(namespace = "http://ws.lab1.wst/", name = "deleteResponse")
     public JAXBElement<DeleteResponse> createDeleteResponse(DeleteResponse value) {

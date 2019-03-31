@@ -10,9 +10,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  * <p>Java class for filter complex type.
- *
+ * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- *
+ * 
  * <pre>
  * &lt;complexType name="filter">
  *   &lt;complexContent>
@@ -29,6 +29,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "filter", propOrder = {
@@ -52,8 +54,10 @@ public class Filter {
     /**
      * Gets the value of the id property.
      *
-     * @return possible object is
-     * {@link Long }
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getId() {
         return id;
@@ -62,8 +66,10 @@ public class Filter {
     /**
      * Sets the value of the id property.
      *
-     * @param value allowed object is
-     *              {@link Long }
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setId(Long value) {
         this.id = value;
@@ -72,8 +78,10 @@ public class Filter {
     /**
      * Gets the value of the animal property.
      *
-     * @return possible object is
-     * {@link String }
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAnimal() {
         return animal;
@@ -82,8 +90,10 @@ public class Filter {
     /**
      * Sets the value of the animal property.
      *
-     * @param value allowed object is
-     *              {@link String }
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAnimal(String value) {
         this.animal = value;
@@ -92,8 +102,10 @@ public class Filter {
     /**
      * Gets the value of the name property.
      *
-     * @return possible object is
-     * {@link String }
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getName() {
         return name;
@@ -102,8 +114,10 @@ public class Filter {
     /**
      * Sets the value of the name property.
      *
-     * @param value allowed object is
-     *              {@link String }
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setName(String value) {
         this.name = value;
@@ -112,8 +126,10 @@ public class Filter {
     /**
      * Gets the value of the breed property.
      *
-     * @return possible object is
-     * {@link String }
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getBreed() {
         return breed;
@@ -122,8 +138,10 @@ public class Filter {
     /**
      * Sets the value of the breed property.
      *
-     * @param value allowed object is
-     *              {@link String }
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setBreed(String value) {
         this.breed = value;
@@ -132,8 +150,10 @@ public class Filter {
     /**
      * Gets the value of the health property.
      *
-     * @return possible object is
-     * {@link String }
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHealth() {
         return health;
@@ -142,8 +162,10 @@ public class Filter {
     /**
      * Sets the value of the health property.
      *
-     * @param value allowed object is
-     *              {@link String }
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHealth(String value) {
         this.health = value;
@@ -152,8 +174,10 @@ public class Filter {
     /**
      * Gets the value of the arrival property.
      *
-     * @return possible object is
-     * {@link XMLGregorianCalendar }
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public XMLGregorianCalendar getArrival() {
         return arrival;
@@ -162,8 +186,10 @@ public class Filter {
     /**
      * Sets the value of the arrival property.
      *
-     * @param value allowed object is
-     *              {@link XMLGregorianCalendar }
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public void setArrival(XMLGregorianCalendar value) {
         this.arrival = value;

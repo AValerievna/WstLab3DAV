@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for delete complex type.
- *
+ * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- *
+ * 
  * <pre>
  * &lt;complexType name="delete">
  *   &lt;complexContent>
@@ -22,6 +22,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "delete", propOrder = {
@@ -33,6 +35,7 @@ public class Delete {
 
     /**
      * Gets the value of the id property.
+     * 
      */
     public long getId() {
         return id;
@@ -40,6 +43,7 @@ public class Delete {
 
     /**
      * Sets the value of the id property.
+     * 
      */
     public void setId(long value) {
         this.id = value;

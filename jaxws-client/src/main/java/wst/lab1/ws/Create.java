@@ -10,9 +10,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  * <p>Java class for create complex type.
- *
+ * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- *
+ * 
  * <pre>
  * &lt;complexType name="create">
  *   &lt;complexContent>
@@ -28,6 +28,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "create", propOrder = {
@@ -49,8 +51,10 @@ public class Create {
     /**
      * Gets the value of the animal property.
      *
-     * @return possible object is
-     * {@link String }
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAnimal() {
         return animal;
@@ -59,8 +63,10 @@ public class Create {
     /**
      * Sets the value of the animal property.
      *
-     * @param value allowed object is
-     *              {@link String }
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAnimal(String value) {
         this.animal = value;
@@ -69,8 +75,10 @@ public class Create {
     /**
      * Gets the value of the name property.
      *
-     * @return possible object is
-     * {@link String }
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getName() {
         return name;
@@ -79,8 +87,10 @@ public class Create {
     /**
      * Sets the value of the name property.
      *
-     * @param value allowed object is
-     *              {@link String }
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setName(String value) {
         this.name = value;
@@ -89,8 +99,10 @@ public class Create {
     /**
      * Gets the value of the breed property.
      *
-     * @return possible object is
-     * {@link String }
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getBreed() {
         return breed;
@@ -99,8 +111,10 @@ public class Create {
     /**
      * Sets the value of the breed property.
      *
-     * @param value allowed object is
-     *              {@link String }
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setBreed(String value) {
         this.breed = value;
@@ -109,8 +123,10 @@ public class Create {
     /**
      * Gets the value of the health property.
      *
-     * @return possible object is
-     * {@link String }
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHealth() {
         return health;
@@ -119,8 +135,10 @@ public class Create {
     /**
      * Sets the value of the health property.
      *
-     * @param value allowed object is
-     *              {@link String }
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHealth(String value) {
         this.health = value;
@@ -129,8 +147,10 @@ public class Create {
     /**
      * Gets the value of the arrival property.
      *
-     * @return possible object is
-     * {@link XMLGregorianCalendar }
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public XMLGregorianCalendar getArrival() {
         return arrival;
@@ -139,8 +159,10 @@ public class Create {
     /**
      * Sets the value of the arrival property.
      *
-     * @param value allowed object is
-     *              {@link XMLGregorianCalendar }
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public void setArrival(XMLGregorianCalendar value) {
         this.arrival = value;

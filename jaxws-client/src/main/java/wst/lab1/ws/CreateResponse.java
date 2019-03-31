@@ -9,9 +9,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for createResponse complex type.
- *
+ * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- *
+ * 
  * <pre>
  * &lt;complexType name="createResponse">
  *   &lt;complexContent>
@@ -23,6 +23,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "createResponse", propOrder = {
@@ -35,6 +37,7 @@ public class CreateResponse {
 
     /**
      * Gets the value of the return property.
+     * 
      */
     public long getReturn() {
         return _return;
@@ -42,6 +45,7 @@ public class CreateResponse {
 
     /**
      * Sets the value of the return property.
+     * 
      */
     public void setReturn(long value) {
         this._return = value;
